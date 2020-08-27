@@ -56,6 +56,51 @@ module.exports = {
 }
 ```
 
+add global.css
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+add babel preset
+
+```js
+module.exports = function (api) {
+  api.cache(true);
+  return {
+    presets: [
+      ["babel-preset-expo", { jsxImportSource: "nativewind" }],
+      "nativewind/babel",
+    ],
+  };
+};
+```
+
+metro.config.js setup
+
+```bash
+npx expo customize metro.config.js
+```
+
+```js
+const { getDefaultConfig } = require("expo/metro-config");
+const { withNativeWind } = require("nativewind/metro");
+
+const config = getDefaultConfig(__dirname);
+
+module.exports = withNativeWind(config, { input: "./global.css" });
+
+import "./global.css"
+```
+
+nativewind-env.d.ts
+
+```ts
+/// <reference types="nativewind/types" />
+```
+
 [expo-router nativewind](https://www.nativewind.dev/getting-started/expo-router)
 
 [typescript nativewind](https://www.nativewind.dev/getting-started/typescript)
