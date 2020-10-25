@@ -1,3 +1,13 @@
-## Nexter
+# Nexter - Landing Page for Home Selling Company
 
-This is a Grid-System Project from JONAS Course
+Credit to **Jonas Schmedtmann**
+
+## Technologies
+
+- HTML
+- CSS
+- SASS
+
+## Features
+
+- Grid System (CSS3)
