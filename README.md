@@ -19,13 +19,13 @@ The system allows collecting ideas from staff to improve the quality of a large 
 
 ## Project TechStack
 
-Programming Language: TypeScript
-Framework: NextJS
-Styling: TailwindCSS
-Component Library: DaisyUI
-Deployment Server: Vercel
-Realtime Database: Firebase
-Authentication: Firebase Client SDK
+- Programming Language: `TypeScript`
+- Framework: `NextJS`
+- Styling: `TailwindCSS`
+- Component Library: `DaisyUI`
+- Deployment Server: `Vercel`
+- Realtime Database: `Firebase`
+- Authentication: `Firebase Client SDK`
 
 ## Project Management
 
@@ -43,22 +43,28 @@ The Agile Scrum Methodology is used to develop the system. All members are assig
     2. QA Manager
     3. QA Coordinator
     4. Staff
-3. Realtime Ideas and comments
-4. Anonymous Ideas and comments
-5. Realtime Thumbs up, Thumbs down
-6. Filters
+3. Ideas and comments
+    1. Realtime
+    2. Anonymous
+    3. Disabled after closure date
+4. Thumbs up, Thumbs down
+    1. Realtime
+5. Idea Filters
     1. Most Popular Ideas
     2. Most Viewed Ideas
     3. Latest Ideas and Comments
     4. Categories
     5. Pagination
-7. Email notifications
-8. Admin Panel
+6. Email notifications
+    - Notification for ideas to QA Coordinator
+    - Notification for comments to author
+7. Admin Dashboard
     1. Users
     2. Categories
     3. Departments
     4. Closure Dates
-9. Reports and statistics
+    5. Download idea attachments
+8. Reports and statistics
     1. Ideas without Comments
     2. Anonymous ideas
     3. Anonymous Comments
@@ -66,14 +72,14 @@ The Agile Scrum Methodology is used to develop the system. All members are assig
     5. Top commented ideas
     6. Ideas per department
     7. Ideas per category
-10. Responsive
+9. UI/UX
+    1. Responsive
 
 ## Project Credentials
 
 | Email                    | Password   | Role            |
 |--------------------------|------------|-----------------|
-| admin@mailinator.com     | Admin2023  | Administrator   |
-| john@mailinator.com      | John2023   | QA Manager      |
-| david@mailinator.com     | David2023  | QA Coordinator  |
-| timmy@mailinator.com     | Timmy2023  | Staff           |
-
+| <admin@mailinator.com>     | Admin2023  | Administrator   |
+| <john@mailinator.com>      | John2023   | QA Manager      |
+| <david@mailinator.com>     | David2023  | QA Coordinator  |
+| <timmy@mailinator.com>     | Timmy2023  | Staff           |
