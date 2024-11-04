@@ -1,11 +1,15 @@
 # Music Player Application
 
+## Expo Setup
+
 ```bash
 yarn create expo-app . -t
 
 npx expo lint
 
 yarn add -D prettier eslint-config-prettier eslint-plugin-prettier eslint-plugin-react-native
+
+yarn lint --fix
 ```
 
 ```js
@@ -19,19 +23,19 @@ module.exports = {
 };
 ```
 
-```bash
-yarn lint --fix
+## Expo Router Setup
 
+```bash
 npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
 
 "main": "expo-router/entry"
 
 "scheme": "plantly"
-
-npx expo install nativewind tailwindcss react-native-reanimated react-native-safe-area-context
 ```
 
 create app folder and move App.tsx to that and change to index.tsx and create _layout.tsx
+
+## NativeWind Setup
 
 ```bash
 npx expo install nativewind tailwindcss react-native-reanimated react-native-safe-area-context
@@ -55,3 +59,15 @@ module.exports = {
 [expo-router nativewind](https://www.nativewind.dev/getting-started/expo-router)
 
 [typescript nativewind](https://www.nativewind.dev/getting-started/typescript)
+
+## Development Build
+
+```bash
+npx expo install expo-dev-client
+
+npx expo prebuild --platform ios
+npx expo prebuild --platform android
+
+npx expo run:ios
+npx expo run:android
+```
