@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer utilities {
-  .container {
+  .screen {
     @apply flex-1 bg-background;
   }
 

@@ -15,7 +15,10 @@ export default function Layout() {
 function RootNavigation() {
   return (
     <Stack>
-      <Stack.Screen name="(tabs)" options={{ title: "Home" }} />
+      <Stack.Screen
+        name="(tabs)"
+        options={{ title: "Home", headerShown: false }}
+      />
     </Stack>
   );
 }
