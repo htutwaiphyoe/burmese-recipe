@@ -124,3 +124,11 @@ npx expo install expo-blur
 ```
 
 [cssInterop](https://github.com/nativewind/nativewind/discussions/989)
+
+Upgrade the Expo SDK
+
+```bash
+yarn add expo@latest
+
+npx expo install --fix
+```
