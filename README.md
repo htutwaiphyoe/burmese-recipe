@@ -1,5 +1,7 @@
 # Music Player Application
 
+[repo](https://github.com/CodeWithGionatha-Labs/music-player)
+
 ## Expo Setup
 
 ```bash
@@ -116,3 +118,9 @@ npx expo prebuild --platform android
 npx expo run:ios
 npx expo run:android
 ```
+
+```bash
+npx expo install expo-blur
+```
+
+[cssInterop](https://github.com/nativewind/nativewind/discussions/989)
