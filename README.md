@@ -132,3 +132,16 @@ yarn add expo@latest
 
 npx expo install --fix
 ```
+
+FastImage
+
+```bash
+npx expo install react-native-fast-image
+```
+
+Image type inference in import
+
+```ts
+declare module "*.png";
+declare module "*.jpg";
+```
