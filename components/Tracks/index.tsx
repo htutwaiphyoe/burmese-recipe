@@ -1,8 +1,17 @@
 import { FlatList, FlatListProps } from "react-native";
 import library from "@/data/library.json";
+import { Track as $Track } from "@/components/Track";
 
-type Props = FlatListProps<(typeof library)[0]>;
+export type Track = (typeof library)[0];
 
-export function Tracks(props: Props) {
-  return <FlatList {...props} data={library} renderItem={() => null} />;
+type TracksProps = Partial<FlatListProps<Track>>;
+
+export function Tracks(props: TracksProps) {
+  return (
+    <FlatList
+      {...props}
+      data={library}
+      renderItem={({ item }) => <$Track data={item} />}
+    />
+  );
 }

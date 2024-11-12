@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-import { colors, fontSize, screenPadding } from "./styles/tokens";
+import { colors, screenPadding } from "./styles/tokens";
 
 module.exports = {
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
@@ -7,7 +7,6 @@ module.exports = {
   theme: {
     extend: {
       colors,
-      fontSize,
       spacing: {
         "screen-horizontal": screenPadding.horizontal,
       },
@@ -17,7 +16,7 @@ module.exports = {
     ({ addUtilities }) => {
       addUtilities({
         ".screen": {
-          "@apply flex-1 bg-black": {},
+          "@apply flex-1 bg-black ": {},
         },
         ".text-normal": {
           "@apply text-base text-text": {},

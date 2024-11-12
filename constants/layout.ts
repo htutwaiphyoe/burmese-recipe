@@ -7,9 +7,9 @@ export const stackScreenLayout: NativeStackNavigationOptions = {
     backgroundColor: colors.background,
   },
   headerLargeTitleStyle: {
-    color: colors.text,
+    color: colors.default,
   },
-  headerTintColor: colors.text,
+  headerTintColor: colors.default,
   headerTransparent: true,
   headerBlurEffect: "prominent",
   headerShadowVisible: false,
