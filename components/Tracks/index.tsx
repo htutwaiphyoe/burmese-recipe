@@ -1,5 +1,5 @@
 import { FlatList, FlatListProps } from "react-native";
-import library from "@/data/library.json";
+import {library} from "@/data/library";
 import { Track as $Track } from "@/components/Track";
 
 export type Track = (typeof library)[0];
