@@ -1,4 +1,5 @@
-import { Image, Pressable, Text, View } from "react-native";
+import { Link } from "expo-router";
+import { Image, Text, View } from "react-native";
 
 export default function LoginScreen() {
   return (
@@ -7,7 +8,7 @@ export default function LoginScreen() {
         className="w-full h-1/2"
         source={require("assets/images/login.png")}
       />
-      <View className="flex-1 justify-between p-10">
+      <View className="flex-1 justify-evenly px-10 gap-5">
         <View className="justify-center items-center gap-5">
           <Text className="text-center font-bold text-4xl">
             Ready to make a new friend?
@@ -16,11 +17,12 @@ export default function LoginScreen() {
             Let's adopt a pet you love and make your life happy.
           </Text>
         </View>
-        <Pressable className="bg-primary rounded-lg p-5 mb-10">
-          <Text className="text-center font-semibold text-base">
-            Get Started
-          </Text>
-        </Pressable>
+        <Link
+          href="/"
+          className="bg-primary text-center font-bold text-xl rounded-lg p-5"
+        >
+          Get Started
+        </Link>
       </View>
     </View>
   );
