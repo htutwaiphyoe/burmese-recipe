@@ -1,13 +1,12 @@
 /** @type {import('tailwindcss').Config} */
+import { colors } from "./styles/tokens";
+
 module.exports = {
   content: ["./app/**/*.{js,jsx,ts,tsx}"],
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
-      colors: {
-        primary: "#e8b20e",
-        gray: "#8f8e8d",
-      },
+      colors,
       fontFamily: {
         thin: ["Outfit_100Thin", "sans-serif"],
         extralight: ["Outfit_200ExtraLight", "sans-serif"],

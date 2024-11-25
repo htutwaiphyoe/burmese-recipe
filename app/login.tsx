@@ -23,7 +23,7 @@ export default function LoginScreen() {
   const onPress = useCallback(async () => {
     try {
       const { createdSessionId, setActive } = await startOAuthFlow({
-        redirectUrl: Linking.createURL("/", { scheme: "pethub" }),
+        redirectUrl: Linking.createURL("/(tabs)/home", { scheme: "pethub" }),
       });
 
       if (createdSessionId) setActive!({ session: createdSessionId });
