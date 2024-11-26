@@ -1,6 +1,6 @@
 # PetHub - Pet Adoption Application
 
-[source](https://www.youtube.com/watch?v=c0AOwKlAz9I)
+[Source](https://www.youtube.com/watch?v=c0AOwKlAz9I)
 
 ## Table of contents
 
