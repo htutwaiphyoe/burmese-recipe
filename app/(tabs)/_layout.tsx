@@ -10,6 +10,7 @@ export default function TabsLayout() {
         name="home"
         options={{
           title: "Home",
+          headerShown: false,
           tabBarIcon: (props) => <Feather {...props} name="home" />,
         }}
       />

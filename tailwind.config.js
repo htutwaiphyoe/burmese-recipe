@@ -2,7 +2,11 @@
 import { colors } from "./styles/tokens";
 
 module.exports = {
-  content: ["./app/**/*.{js,jsx,ts,tsx}"],
+  content: [
+    "./app/**/*.{js,jsx,ts,tsx}",
+    "./components/**/*.{js,jsx,ts,tsx}",
+    "./styles/**/*.css",
+  ],
   presets: [require("nativewind/preset")],
   theme: {
     extend: {
