@@ -9,11 +9,11 @@ export default function Header() {
     <View className="flex flex-row items-start justify-between">
       <View className="flex gap-1">
         <Text className="text-xl">Welcome,</Text>
-        <Text className="text-2xl font-bold">{user?.fullName}</Text>
+        <Text className="text-2xl font-semibold">{user?.fullName}</Text>
       </View>
       <Image
         source={{ uri: user?.imageUrl }}
-        className="w-10 h-10 rounded-full"
+        className="rounded-full w-11 h-11"
       />
     </View>
   );
