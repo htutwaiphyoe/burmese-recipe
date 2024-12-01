@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import { db } from "@/firebase/config";
+import React, { useEffect, useState } from "react";
 import { View, FlatList, Image, Dimensions } from "react-native";
 import { collection, DocumentData, getDocs } from "firebase/firestore";
 
@@ -20,7 +20,7 @@ export default function Slider() {
   }, []);
 
   return (
-    <View className="my-5 scroll-">
+    <View>
       <FlatList
         horizontal
         data={sliders}

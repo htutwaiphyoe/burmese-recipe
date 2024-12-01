@@ -17,6 +17,7 @@ export default function Categories() {
         renderItem={({ item }) => (
           <TouchableOpacity
             key={item.name}
+            activeOpacity={0.7}
             className="flex-1 gap-2"
             onPress={() => setCategory(item.name)}
           >
