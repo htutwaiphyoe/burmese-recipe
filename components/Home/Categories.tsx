@@ -1,12 +1,11 @@
-import { View, Text, FlatList, Image, TouchableOpacity } from "react-native";
 import React from "react";
-import { categories } from "@/constants";
 import { cn } from "@/utils";
+import { categories } from "@/constants";
+import { useCategoryStore } from "@/store";
+import { View, Text, FlatList, Image, TouchableOpacity } from "react-native";
 
 export default function Categories() {
-  const [selectedCategory, setSelectedCategory] = React.useState<string | null>(
-    categories?.[0]?.name
-  );
+  const { category, setCategory } = useCategoryStore();
 
   return (
     <View className="gap-3">
@@ -19,14 +18,12 @@ export default function Categories() {
           <TouchableOpacity
             key={item.name}
             className="flex-1 gap-2"
-            onPress={() => setSelectedCategory(item.name)}
+            onPress={() => setCategory(item.name)}
           >
             <View
               className={cn(
                 "items-center justify-center p-5 border rounded-lg bg-primary-light border-primary",
-                selectedCategory === item.name
-                  ? "bg-secondary border-secondary"
-                  : ""
+                category === item.name ? "bg-secondary border-secondary" : ""
               )}
             >
               <Image source={item.image} className="w-10 h-10" />
