@@ -1,9 +1,11 @@
 import React from "react";
 import { pets } from "@/constants";
 import { useCategoryStore } from "@/store";
-import { View, Text, FlatList, Image } from "react-native";
+import { View, Text, FlatList, Image, TouchableOpacity } from "react-native";
+import { useRouter } from "expo-router";
 
 export default function Pets() {
+  const router = useRouter();
   const { category } = useCategoryStore();
 
   return (
@@ -13,7 +15,13 @@ export default function Pets() {
       showsHorizontalScrollIndicator={false}
       data={pets.filter((pet) => pet.category === category)}
       renderItem={({ item }) => (
-        <View className="gap-3 p-3 bg-white rounded-xl" key={item.name}>
+        <TouchableOpacity
+          key={item.name}
+          className="gap-3 p-3 bg-white rounded-xl"
+          onPress={() =>
+            router.push({ pathname: "/pet-details", params: item })
+          }
+        >
           <Image
             source={{ uri: item.imageUrl }}
             className="object-cover w-40 h-32 rounded-lg"
@@ -32,7 +40,7 @@ export default function Pets() {
               {item.age} YRS
             </Text>
           </View>
-        </View>
+        </TouchableOpacity>
       )}
     />
   );

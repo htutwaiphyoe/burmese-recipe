@@ -1,3 +1,5 @@
+import { Pets } from "@/types";
+
 export const categories = [
   { name: "Dogs", image: require("@/assets/images/dog.png") },
   { name: "Fish", image: require("@/assets/images/fish.png") },
@@ -5,7 +7,7 @@ export const categories = [
   { name: "Cats", image: require("@/assets/images/kitty.png") },
 ];
 
-export const pets = [
+export const pets: Pets = [
   {
     name: "Buddy",
     age: 3,
