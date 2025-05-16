@@ -2,6 +2,8 @@
 
 - React Native Application for Burmese Recipes
 
+[Demo](./assets/videos//demo.mp4)
+
 ## Table of contents
 
 - Technologies
